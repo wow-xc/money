@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 & 로그인</title>
+</head>
+<body>
+
+<h2>회원가입</h2>
+<input id="signup-email" placeholder="이메일"/>
+<input id="signup-password" placeholder="비밀번호" type="password"/>
+<input id="signup-username" placeholder="사용자 이름"/>
+<button onclick="signUp()">회원가입</button>
+
+<h2>로그인</h2>
+<input id="login-email" placeholder="이메일"/>
+<input id="login-password" placeholder="비밀번호" type="password"/>
+<button onclick="login()">로그인</button>
+
+<h2>내 정보 보기</h2>
+<button onclick="getMyProfile()">내 정보 가져오기</button>
+<div id="my-profile"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
