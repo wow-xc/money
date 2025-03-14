@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원가입 로그인</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>회원가입 로그인</title>
+
+<!-- Supabase JS 라이브러리 -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
 </head>
+
 <body>
-    <h2>회원가입</h2>
-    <input type="email" id="signup-email" placeholder="이메일">
-    <input type="password" id="signup-password" placeholder="비밀번호">
-    <input type="text" id="signup-username" placeholder="사용자 이름">
-    <button onclick="signUp()">회원가입</button>
 
-    <h2>로그인</h2>
-    <input type="email" id="login-email" placeholder="이메일">
-    <input type="password" id="login-password" placeholder="비밀번호">
-    <button onclick="login()">로그인</button>
+<h2>회원가입</h2>
 
-    <!-- JavaScript 파일 연결 -->
-    <script src="script.js"></script>
+<input type="email" id="signup-email" placeholder="이메일">
+
+<input type="password" id="signup-password" placeholder="비밀번호">
+
+<input type="text" id="signup-username" placeholder="사용자 이름">
+
+<button onclick="signUp()">회원가입</button>
+
+<h2>로그인</h2>
+
+<input type="email" id="login-email" placeholder="이메일">
+
+<input type="password" id="login-password" placeholder="비밀번호">
+
+<button onclick="login()">로그인</button>
+
+<!-- JavaScript 파일 연결 -->
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
