@@ -47,25 +47,3 @@ async function login() {
         console.error('오류 발생:', err);
     }
 }
-
-
-// 내 프로필 가져오기 함수
-async function getMyProfile() {
-    const { data: { user } } = await supabase.auth.getUser();
-
-    if (!user) {
-        alert('먼저 로그인 해주세요.');
-        return;
-    }
-
-    const { data, error } = await supabase.from('profiles')
-    .select('username, cash, cache_content')
-    .eq('id', user.id)
-    .single();
-
-    if (error) alert('정보 가져오기 실패: ' + error.message);
-    else {
-        document.getElementById('my-profile').innerText =
-        `이름: ${data.username || '없음'}, 캐시: ${data.cash}, 캐시내용: ${data.cache_content || '없음'}`;
-    }
-}
