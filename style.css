@@ -1,0 +1,14 @@
+/* 네비게이션 바 스타일 */
+.navbar-nav .nav-item {
+    display: flex;
+}
+
+#auth-buttons a {
+    display: inline-block;
+    margin-right: 10px; /* 로그인과 회원가입 버튼 사이 간격 */
+}
+
+.user-info {
+    color: #007BFF;
+    font-weight: bold;
+}
