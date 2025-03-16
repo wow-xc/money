@@ -15,10 +15,11 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <!-- 로그인 및 회원가입 버튼 -->
-                    <li class="nav-item d-flex" id="auth-buttons">
-                        <a class="nav-link me-2" href="/signin.html">로그인</a>
-                        <a class="nav-link" href="/signup.html">회원가입</a>
-                    </li>
+                    <div id="auth-buttons" class="auth-buttons-container">
+                        <a href="/login" class="auth-btn">로그인</a>
+                        <a href="/signup" class="auth-btn">회원가입</a>
+                    </div>
+                    
                     <!-- 사용자 정보 -->
                     <li class="nav-item d-none" id="user-info">
                         <span class="nav-link user-info"></span>
